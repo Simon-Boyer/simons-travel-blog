@@ -49,5 +49,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.date.outputs.date }}
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
