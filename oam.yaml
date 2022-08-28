@@ -14,9 +14,12 @@ spec:
           - port: 1313
             expose: true
       traits:
-        - type: gateway
+        - type: http-route
           properties:
-            domain: blog.codegameeat.com
-            http:
-              "/": 1313
-            class: traefik
+            domains:
+              - blog.codegameeat.com
+            rules:
+            - path:
+                type: PathPrefix
+                value: /
+              port: 1313
