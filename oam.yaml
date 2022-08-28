@@ -11,5 +11,5 @@ spec:
         image: ghcr.io/simon-boyer/simons-travel-blog:2022-08-28
         imagePullPolicy: Always
         ports:
-          - port: 443
+          - port: 80
             expose: true
