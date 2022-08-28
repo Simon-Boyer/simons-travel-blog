@@ -46,7 +46,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: 
-            - ${{ steps.meta.outputs.tags }}
-            - ghcr.io/simon-boyer/simons-travel-blog:${{ steps.date.outputs.date }}
+          tags: ${{ steps.meta.outputs.tags }} , ghcr.io/simon-boyer/simons-travel-blog:${{ steps.date.outputs.date }}
           labels: ${{ steps.meta.outputs.labels }}
