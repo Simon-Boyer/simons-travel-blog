@@ -9,7 +9,7 @@ spec:
       type: webservice
       properties:
         image: ghcr.io/simon-boyer/simons-travel-blog:2022-08-28
-        imagePullPolicy: always
+        imagePullPolicy: Always
         ports:
           - port: 1313
             expose: true
