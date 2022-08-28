@@ -13,13 +13,3 @@ spec:
         ports:
           - port: 1313
             expose: true
-      traits:
-        - type: http-route
-          properties:
-            domains:
-              - blog.codegameeat.com
-            rules:
-            - path:
-                type: PathPrefix
-                value: /
-              port: 1313

@@ -1,0 +1,15 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: blog-ingress
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`blog.codegameeat.com`)
+      services:
+        - name: hugo-server
+          port: 1313
+  tls:
+    certResolver: le
