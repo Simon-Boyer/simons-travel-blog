@@ -8,7 +8,7 @@ spec:
     - name: hugo-server
       type: webservice
       properties:
-        image: ghcr.io/simon-boyer/simons-travel-blog:2022-08-28
+        image: ghcr.io/simon-boyer/simons-travel-blog:2022-08-29
         imagePullPolicy: Always
         ports:
           - port: 80
