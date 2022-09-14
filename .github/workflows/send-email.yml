@@ -9,8 +9,10 @@ jobs:
   deploy:
     runs-on: ubuntu-20.04
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
       - name: SendGrid
         uses: peter-evans/sendgrid-action@v1
         env:
-          SCRIPT_FILEPATH: ./sendgrid.js
+          SCRIPT_FILEPATH: sendgrid.js
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
