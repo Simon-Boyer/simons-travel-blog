@@ -5,6 +5,7 @@ sgClient.setApiKey(process.env.SENDGRID_API_KEY);
 
 const data = {
     name: "Blog Simon",
+    send_at: 'now',
     send_to: {
         list_ids: ['de8ca425-5ab0-4d10-a0cd-27a8cf77bfdc']
     },
