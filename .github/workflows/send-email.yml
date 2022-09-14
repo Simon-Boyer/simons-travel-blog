@@ -1,0 +1,15 @@
+name: Send emails
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: SendGrid
+        uses: peter-evans/sendgrid-action@v1
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}

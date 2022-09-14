@@ -3,6 +3,12 @@ languageCode = "en-us"
 theme = "hello-friend"
 paginate = 5
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 [params]
   # dir name of your blog content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
@@ -56,7 +62,7 @@ paginate = 5
         identifier = "about"
         name = "À Propos"
         url = "/about/"
-    #  [[languages.en.menu.main]]
-    #    identifier = "showcase"
-    #    name = "Showcase"
-    #    url = "/showcase"
+      [[languages.en.menu.main]]
+        identifier = "inscription"
+        name = "Inscription"
+        url = "/inscription/"
