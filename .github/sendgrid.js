@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
-const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+const sgClient = require('@sendgrid/client');
+sgClient.setApiKey(process.env.SENDGRID_API_KEY);
 
 const data = {
     name: "Blog Simon",
@@ -19,7 +19,7 @@ const request = {
     body: data
 }
   
-sgMail.request(request)
+sgClient.request(request)
   .then(([response, body]) => {
     console.log(response.statusCode);
     console.log(response.body);
