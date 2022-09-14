@@ -26,5 +26,5 @@ sgClient.request(request)
     console.log(response.body);
   })
   .catch(error => {
-    console.error(error);
+    console.error(error.errors);
   });
