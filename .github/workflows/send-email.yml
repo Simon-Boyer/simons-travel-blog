@@ -7,11 +7,11 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: SendGrid
-        uses: peter-evans/sendgrid-action@v1
+        uses: peter-evans/sendgrid-action@v1.0.1
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
