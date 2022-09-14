@@ -12,5 +12,5 @@ jobs:
       - name: SendGrid
         uses: peter-evans/sendgrid-action@v1
         env:
-          SCRIPT_FILEPATH: sendgrid.js
+          SCRIPT_FILEPATH: ./sendgrid.js
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
