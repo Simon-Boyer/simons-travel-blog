@@ -12,6 +12,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: SendGrid
-        uses: peter-evans/sendgrid-action@v1.0.1
+        uses: simon-boyer/sendgrid-action@test-v2
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
