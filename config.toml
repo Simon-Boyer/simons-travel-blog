@@ -33,8 +33,8 @@ paginate = 5
 
 [languages]
   [languages.en]
-    title = "Simon en Corée"
-    subtitle = "Un blog pour mon échange étudiant"
+    title = "Simon en Voyage"
+    subtitle = "Un blog pour mes voyages"
     keywords = ""
     copyright = "© <span>&nbsp;<a href=\"https://github.com/Simon-Boyer\" target=\"_blank\" rel=\"noopener\">Simon Boyer</a> (2022)</span>  Theme par <span>&nbsp;<a href=\"https://github.com/panr\" target=\"_blank\" rel=\"noopener\">panr</a></span>"
     menuMore = "Affiché plus"
@@ -50,12 +50,12 @@ paginate = 5
     # lastModDisplay = ""
 
     [languages.en.params.logo]
-     # logoText = "Simon en Corée"
+     logoText = "Simon en Voyage"
       logoHomeLink = "/" 
     # or
     #
-     path = "/img/thumbnail.svg"
-     alt = "Simon en Corée"
+   #  path = "/img/thumbnail.svg"
+     # alt = "Simon en Corée"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
